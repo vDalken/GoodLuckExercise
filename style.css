@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.progress-bar{
+    position: relative;
+    background: conic-gradient(greenyellow 36deg, black 0);
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.out-circle{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    box-shadow: 
+    0 0 0 2px blue;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: orange;
+    z-index: 1;
+}
+
+.in-circle{
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    background-color: black;
+}
+
+.content{
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input[type="range"]::-ms-thumb {
+    background: blue; 
+    margin-top: -7px; 
+}
